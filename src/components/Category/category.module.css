@@ -1,0 +1,9 @@
+.categorybar
+{
+    height: 50px;
+    background-color: orange;
+    margin-bottom: 1px;
+    display: grid;
+    align-content: center;
+    
+}
