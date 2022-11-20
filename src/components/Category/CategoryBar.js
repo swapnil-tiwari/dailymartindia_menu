@@ -5,7 +5,9 @@ function CategoryBar(props) {
   return (
     <div className="container">
       <div className={styles.categorybar}>
-        <span>Category: Spices</span>
+        <span>
+          <strong>Category: Spices</strong>
+        </span>
       </div>
     </div>
   );

@@ -3,6 +3,7 @@ import "./App.css";
 import HeaderView from "./components/Header/HeaderView";
 import MenuLoader from "./components/MenuView/MenuLoader";
 import CategoryBar from "./components/Category/CategoryBar";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <HeaderView />
       <CategoryBar />
       <MenuLoader />
+      <Footer />
     </div>
   );
 }

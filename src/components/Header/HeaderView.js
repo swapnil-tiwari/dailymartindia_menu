@@ -37,7 +37,7 @@ function HeaderView(props) {
           <ul className="navbar-nav">
             <li className={`nav-item ${activeLink}`}>
               <a className="nav-link" href="#">
-                Home <span className="sr-only"></span>
+                Menu <span className="sr-only"></span>
               </a>
             </li>
             <li className="nav-item">
