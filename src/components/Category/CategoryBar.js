@@ -1,9 +1,16 @@
 import React from "react";
 import styles from "./category.module.css";
+import { useState } from "react";
 
 function CategoryBar(props) {
+  //   const [color, setColor] = useState("orange");
+
+  //   let currentCategory = "spices";
+  //   let category_colors = { spices: "red" };
+
+  //   setColor("red");
   return (
-    <div className="container">
+    <div>
       <div className={styles.categorybar}>
         <span>
           <strong>Category: Spices</strong>

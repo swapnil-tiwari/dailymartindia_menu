@@ -23,7 +23,7 @@ function App() {
         </a>
       </header> */}
       <HeaderView />
-      <CategoryBar />
+      {/* <CategoryBar /> */}
       <MenuLoader />
       <Footer />
     </div>

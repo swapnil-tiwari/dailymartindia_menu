@@ -1,11 +1,28 @@
 import { render } from "@testing-library/react";
 import React from "react";
 import styles from "./menuview.module.css";
-console.log(styles);
+import { products as productList } from "../../assets/productsData.js";
+import CategoryBar from "../Category/CategoryBar";
+// console.log(productList);
+let productsCounter = 0;
+let productsView = productList.map((product) => {
+  productsCounter += 1;
+  let productTabs = (
+    <tr key={productsCounter}>
+      <th scope="row">{productsCounter}</th>
+      <td>{product.product_name}</td>
+      <td>{product.qty}</td>
+      <td>{product.price}</td>
+    </tr>
+  );
+  return productTabs;
+});
+console.log(productsView);
 function MenuLoader(props) {
   return (
-    <div className="container">
-      <table className={`table ${styles.tableCont}`}>
+    <div className={`container ${styles.tableCont}`}>
+      <CategoryBar />
+      <table className={`table`}>
         <thead>
           <tr>
             <th scope="col">Serial No.</th>
@@ -14,26 +31,7 @@ function MenuLoader(props) {
             <th scope="col">Price</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
+        <tbody>{productsView}</tbody>
       </table>
     </div>
   );
