@@ -31,4 +31,28 @@ export var products = [
     price: "Rs.200",
     category: "spices",
   },
+  {
+    id: "5",
+    product_name: "Dawat Rice",
+    imgURL: "https://swapnil-tiwari.github.io/images/5.png",
+    qty: "10kg",
+    price: "Rs.2000",
+    category: "rice",
+  },
+  {
+    id: "5",
+    product_name: "Basmati Rice",
+    imgURL: "https://swapnil-tiwari.github.io/images/5.png",
+    qty: "100kg",
+    price: "Rs.20000",
+    category: "rice",
+  },
+  {
+    id: "6",
+    product_name: "Dawat Polished Rice",
+    imgURL: "https://swapnil-tiwari.github.io/images/5.png",
+    qty: "40kg",
+    price: "Rs.2000",
+    category: "rice",
+  },
 ];

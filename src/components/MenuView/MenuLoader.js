@@ -3,27 +3,39 @@ import React from "react";
 import styles from "./menuview.module.css";
 import { products as productList } from "../../assets/productsData.js";
 import CategoryBar from "../Category/CategoryBar";
+import { useState } from "react";
+
 // console.log(productList);
-let productsCounter = 0;
-let productsView = productList.map((product) => {
-  productsCounter += 1;
-  let productTabs = (
-    <tr key={productsCounter}>
-      <th scope="row">{productsCounter}</th>
-      <td>{product.product_name}</td>
-      <td>{product.qty}</td>
-      <td>{product.price}</td>
-    </tr>
-  );
-  return productTabs;
-});
-console.log(productsView);
+
+// console.log(productsView);
 function MenuLoader(props) {
+  const [category, setCategory] = useState("spices");
+  function categoryLoader() {
+    let productsCounter = 0;
+    let filteredList = productList.filter((item) => {
+      return item.category == category.toLowerCase();
+    });
+    let productsMapped = filteredList.map((product) => {
+      productsCounter += 1;
+      let productTabs = (
+        <tr key={productsCounter}>
+          <th scope="row">{productsCounter}</th>
+          <td>{product.product_name}</td>
+          <td>{product.qty}</td>
+          <td>{product.price}</td>
+        </tr>
+      );
+      return productTabs;
+    });
+    return productsMapped;
+  }
+  let productsView = categoryLoader();
+  console.log(productsView);
   return (
     <div className={`container ${styles.tableCont}`}>
       <CategoryBar />
-      <table className={`table`}>
-        <thead>
+      <table className={`table table-hover`}>
+        <thead style={{ background: "#05668D", color: "white" }}>
           <tr>
             <th scope="col">Serial No.</th>
             <th scope="col">Product Name</th>
