@@ -12,9 +12,17 @@ function CategoryBar(props) {
   return (
     <div>
       <div className={styles.categorybar}>
-        <span>
-          <strong>Category: Spices</strong>
-        </span>
+        <div className={styles.categorybarTabs}>
+          <span>
+            <strong>Category: </strong>
+          </span>
+          <button type="button" class="btn btn-danger">
+            Spices
+          </button>
+          <button type="button" class="btn btn-info">
+            Rice
+          </button>
+        </div>
       </div>
     </div>
   );
