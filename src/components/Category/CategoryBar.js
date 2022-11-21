@@ -16,10 +16,22 @@ function CategoryBar(props) {
           <span>
             <strong>Category: </strong>
           </span>
-          <button type="button" class="btn btn-danger">
+          <button
+            type="button"
+            class="btn btn-danger"
+            onClick={() => {
+              props.categoryChanger("spices");
+            }}
+          >
             Spices
           </button>
-          <button type="button" class="btn btn-info">
+          <button
+            type="button"
+            class="btn btn-info"
+            onClick={() => {
+              props.categoryChanger("rice");
+            }}
+          >
             Rice
           </button>
         </div>
