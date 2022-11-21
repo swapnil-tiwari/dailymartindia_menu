@@ -34,6 +34,15 @@ function CategoryBar(props) {
           >
             Rice
           </button>
+          <button
+            type="button"
+            class="btn btn-info"
+            onClick={() => {
+              props.categoryChanger("rice");
+            }}
+          >
+            Tea
+          </button>
         </div>
       </div>
     </div>
