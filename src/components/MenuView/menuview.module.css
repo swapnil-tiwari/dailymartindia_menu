@@ -14,6 +14,12 @@
     margin-right: auto;
 
 }
+@media only screen and (max-width: 600px) {
+    .tableCont
+    {
+        width: 95%;
+    }
+  }
 
  th
 {
