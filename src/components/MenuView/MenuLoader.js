@@ -22,7 +22,7 @@ function MenuLoader(props) {
           <th scope="row">{productsCounter}</th>
           <td>{product.product_name}</td>
           <td>{product.qty}</td>
-          <td>{product.price}</td>
+          <td>{product.price}¥</td>
         </tr>
       );
       return productTabs;
@@ -37,10 +37,18 @@ function MenuLoader(props) {
       <table className={`table table-hover`}>
         <thead style={{ background: "#05668D", color: "white" }}>
           <tr>
-            <th scope="col">S.No</th>
-            <th scope="col">Product Name</th>
-            <th scope="col">Quantity</th>
-            <th scope="col">Price</th>
+            <th scope="col" style={{ fontWeight: "bold" }}>
+              S.No
+            </th>
+            <th scope="col" style={{ fontWeight: "bold" }}>
+              Product Name
+            </th>
+            <th scope="col" style={{ fontWeight: "bold" }}>
+              Quantity
+            </th>
+            <th scope="col" style={{ fontWeight: "bold" }}>
+              Price
+            </th>
           </tr>
         </thead>
         <tbody>{productsView}</tbody>
