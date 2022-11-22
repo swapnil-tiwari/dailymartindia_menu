@@ -1,7 +1,7 @@
 import { render } from "@testing-library/react";
 import React from "react";
 import styles from "./menuview.module.css";
-import { products as productList } from "../../assets/productsData.js";
+import { products as productList } from "../../assets/dm_liveData.js";
 import CategoryBar from "../Category/CategoryBar";
 import { useState } from "react";
 
@@ -13,7 +13,7 @@ function MenuLoader(props) {
   function categoryLoader() {
     let productsCounter = 0;
     let filteredList = productList.filter((item) => {
-      return item.category == category.toLowerCase();
+      return item.category.toLowerCase() == category.toLowerCase();
     });
     let productsMapped = filteredList.map((product) => {
       productsCounter += 1;

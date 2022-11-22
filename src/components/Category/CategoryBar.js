@@ -29,19 +29,19 @@ function CategoryBar(props) {
             type="button"
             class="btn btn-info"
             onClick={() => {
-              props.categoryChanger("rice");
+              props.categoryChanger("lentils");
             }}
           >
-            Rice
+            Lentils
           </button>
           <button
             type="button"
             class="btn btn-info"
             onClick={() => {
-              props.categoryChanger("rice");
+              props.categoryChanger("Pickle");
             }}
           >
-            Tea
+            Pickle
           </button>
         </div>
       </div>
