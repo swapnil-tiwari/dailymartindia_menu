@@ -37,7 +37,7 @@ function MenuLoader(props) {
       <table className={`table table-hover`}>
         <thead style={{ background: "#05668D", color: "white" }}>
           <tr>
-            <th scope="col">Serial No.</th>
+            <th scope="col">S.No</th>
             <th scope="col">Product Name</th>
             <th scope="col">Quantity</th>
             <th scope="col">Price</th>
