@@ -32,7 +32,7 @@ function MenuLoader(props) {
   let productsView = categoryLoader();
   console.log(productsView);
   return (
-    <div className={`container ${styles.tableCont}`}>
+    <div className={`${styles.tableCont}`}>
       <CategoryBar categoryChanger={setCategory} />
       <table className={`table table-hover`}>
         <thead style={{ background: "#05668D", color: "white" }}>

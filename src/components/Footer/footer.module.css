@@ -9,6 +9,7 @@
     width: 100%;
     height: fit-content;
     position: absolute;
+    overflow: hidden;
     bottom: 0;
 }
 .footer_icon
