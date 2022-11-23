@@ -34,7 +34,7 @@ function MenuLoader(props) {
   return (
     <div className={`${styles.tableCont}`}>
       <CategoryBar categoryChanger={setCategory} />
-      <table className={`table table-hover`}>
+      <table className={`table table-hover table-border`}>
         <thead style={{ background: "#05668D", color: "white" }}>
           <tr>
             <th scope="col" style={{ fontWeight: "bold" }}>
