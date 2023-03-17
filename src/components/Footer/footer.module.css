@@ -8,7 +8,7 @@
 {
     width: 100%;
     height: fit-content;
-    position: absolute;
+    
     overflow: hidden;
     bottom: 0;
 }
@@ -20,7 +20,7 @@
 }
 .footer_cont img
 {
-    width: 15%;
+    width: 30%;
     height: auto;
     position: relative;
     animation: move_anim 5s 2;
